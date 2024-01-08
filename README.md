@@ -17,10 +17,12 @@ new_no_channels = 1
 new_image_class1 = 'normal'
 new_image_class2 = 'tumour'
 new_model = BinaryImageClassifier(new_no_images, new_image_size, new_no_channels, new_image_class1, new_image_class2)
+
 new_top_folder_path = 'C:\\Users\\plain\\Desktop\\brain_mri_images\\*'
 new_model.image_preparation(new_top_folder_path)
 new_folder_path = 'C:\\Users\\plain\\Desktop\\brain_mri_images\\*.jpg'
 new_model.array_preparation(new_folder_path)
+
 new_model.convul_model_structure()
 new_model.convul_model_performance()
 new_unseen_image_path = 'C:\\Users\\plain\\Desktop\\test_tumour.jpg'
