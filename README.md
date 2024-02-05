@@ -3,6 +3,8 @@ The project is a binary image classifier. The `BinaryClassifier` class. The `pre
 
 Image dataset used in the below example is a selection of the images in the Msoud Nickparvar. (2021). <i>Brain Tumor MRI Dataset</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/2645886. Used and shared under CC0: Public Domain licence.
 
+# ADD ZIP FOLDER WITH IMAGES AND TEST IMAGE
+
 ## Dependencies  
 * Microsoft Windows 10.0.19045
 * Python 3.9.1
