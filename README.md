@@ -10,22 +10,27 @@ Image dataset used in the below example is a selection of the images in the Msou
 
 ## Execution - brain MRI image example
 ```python
-new_no_images = 196
-new_image_size = 100
-new_no_channels = 1
-new_image_class1 = 'normal'
-new_image_class2 = 'tumour'
-new_model = BinaryImageClassifier(new_no_images, new_image_size, new_no_channels, new_image_class1, new_image_class2)
+from classificationanalysis import *
 
-new_top_folder_path = 'C:\\Users\\plain\\Desktop\\brain_mri_images\\*'
-new_model.image_preparation(new_top_folder_path)
-new_folder_path = 'C:\\Users\\plain\\Desktop\\brain_mri_images\\*.jpg'
-new_model.array_preparation(new_folder_path)
+mri_tot_no_images = 196
+mri_image_size = 100
+mri_no_channels = 1
+mri_class1 = 'normal'
+mri_class2 = 'tumour'
 
-new_model.convul_model_structure()
-new_model.convul_model_performance()
-new_unseen_image_path = 'C:\\Users\\plain\\Desktop\\test_tumour.jpg'
-new_model.convul_model_prediction(new_unseen_image_path)
+brain_mri = BinaryClassifier(mri_tot_no_images, mri_image_size, mri_no_channels, mri_class1, mri_class2)
+mri_image_top_folder= 'C:\\Users\\plain\\Desktop\\brain_mri_images\\*'
+brain_mri.prepare_images(mri_image_top_folder)
+
+mri_image_folder = 'C:\\Users\\plain\\Desktop\\brain_mri_images\\*.jpg'
+brain_mri.prepare_arrays(mri_image_folder)
+
+brain_mri.define_model()
+
+brain_mri.fit_model()
+
+unseen_mri_image = 'C:\\Users\\plain\\Desktop\\tumour.jpg'
+brain_mri.make_prediction(unseen_mri_image)
 ```
 
 ## Animation - brain MRI image example
