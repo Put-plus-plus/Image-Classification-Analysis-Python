@@ -1,14 +1,14 @@
 ## Description 
 The project is a binary image classifier. The `BinaryClassifier` class. The `prepare_images()` method input is the path of a top-folder that should contain two sub-folders with unique names (eg 'normal' and tumour') and should respectively contain negative and positive jpg imagnes. The output is the top-folder, which now contains no sub-folders, only consistently labelled and formated positive and negative jpg images. The `prepare_arrays()` method input is the path of the folder with consistently labelled and formated positive and negative jgp images, and the output is four numpy arrays, two of which contain training data and two of which contain testing data (STATE WHAT'S IN THE ARRAYS - LABELLES AND IMAGES). The `define_model()` method defines the structure of a convolutional neural network model. The `train_model()` method trains the convolutional neural network model using the structure defined by `define_model()`and the data prepared by `prepare_arrays()`. The a `make_prediction()` method Input is the path of a single jpg image previously unseen by the convolutional neural network model, and output is the jpg image labeled with its predicted image class as predicted by the cnn model.
 
-Image dataset used in the below example is a selection of the images in the Msoud Nickparvar. (2021). <i>Brain Tumor MRI Dataset</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/2645886, used and shared under CC0: Public Domain licence.
+Image dataset used in the below example is a selection of the images in the Msoud Nickparvar. (2021). <i>Brain Tumor MRI Dataset</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/2645886. Used and shared under CC0: Public Domain licence.
 
 ## Dependencies  
 * Microsoft Windows 10.0.19045
 * Python 3.9.1
 * glob (built-in), cv2 3.4.13, shutil (built-in), numpy 1.22.2, sklearn 1.0.1, keras 2.12.0, tflearn 0.5.0, matplotlib 3.3.4   
 
-## Execution - brain tumour MRI example BETTER NAMING IS NEEDED
+## Execution - brain MRI image example
 ```python
 new_no_images = 196
 new_image_size = 100
@@ -28,5 +28,5 @@ new_unseen_image_path = 'C:\\Users\\plain\\Desktop\\test_tumour.jpg'
 new_model.convul_model_prediction(new_unseen_image_path)
 ```
 
-## Animation - brain tumour MRI example 
+## Animation - brain MRI image example
 remember to add the link to the GIF, which I must also make sure to add to the repo
