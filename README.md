@@ -35,5 +35,3 @@ unseen_mri_image = 'C:\\Users\\plain\\Desktop\\tumour.jpg'
 brain_mri.make_prediction(unseen_mri_image)
 ```
 
-## Animation - brain MRI image example
-remember to add the link to the GIF, which I must also make sure to add to the repo
