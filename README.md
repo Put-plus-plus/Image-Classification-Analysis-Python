@@ -1,7 +1,7 @@
 ## Description 
 Binary image classification is the assignment of images into one of two categories based on specific rules. In this case the classification analysis is organised into the `BinaryClassifier` class, which has five methods. The `prepare_images()` method accepts a top-folder that contains two uniquely named sub-folders with negative and positive images (eg 'normal' and tumour'), and outputs a single folder with consistently labelled and formatted negative and positive images (eg 'normal27', 'tumour49'). The `prepare_arrays()` method accepts the folder with consistently labelled and formatted positive and negative images, and outputs four numpy arrays with training and testing data. The `define_model()` method defines the structure of the convolutional neural network model. The `fit_model()` method trains the convolutional neural network model. The a `make_prediction()` method accepts a single image previously unseen by the convolutional neural network model, and outputs the  image labelled with its class as predicted by the model.
 
-The image dataset used in the example below is an adapted version of Msoud Nickparvar. (2021). <i>Brain Tumor MRI Dataset</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/2645886, and is used under a CC0: Public Domain licence.
+The image dataset used in the example below is an adapted version of Msoud Nickparvar. (2021). <i>Brain Tumor MRI Dataset</i> [Data set]. Kaggle. https://doi.org/10.34740/KAGGLE/DSV/2645886, and is used under a CC0: Public Domain licence. 
 
 ## Dependencies  
 * Microsoft Windows 10.0.19045
